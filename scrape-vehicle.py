@@ -1,4 +1,5 @@
 import csv
+import datetime
 from google.transit import gtfs_realtime_pb2
 import requests
 
@@ -21,6 +22,8 @@ for entity in feed.entity:
                 entity.vehicle.position.longitude
                 ])
 
-with open('bus-vehicle.csv', 'a', newline='') as csvfile:
+now = datetime.datetime.now()
+filename = 'data/vehicle-%s-%s-%s.csv' %(now.year, now.month, now.day)
+with open(filename, 'a', newline='') as csvfile:
     csv_file = csv.writer(csvfile, lineterminator='\n')
     csv_file.writerows(vehicles)
