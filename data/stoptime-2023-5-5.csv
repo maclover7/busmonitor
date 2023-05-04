@@ -1,2 +1,3 @@
 timestamp,trip_id,route_id,schedule_relationship,vehicle_id,stop_id,arrival,departure
 timestamp,trip_id,route_id,schedule_relationship,vehicle_id,stop_id,arrival,departure
+timestamp,trip_id,route_id,schedule_relationship,vehicle_id,stop_id,arrival,departure
