@@ -1,7 +1,8 @@
 name: Create daily files
 on:
-  schedule:
-    - cron: '*/58 */23 * * *'
+  workflow_dispatch:
+  # schedule:
+  #   - cron: '*/58 */23 * * *'
 
 jobs:
   create_daily_files:
